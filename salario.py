@@ -9,8 +9,10 @@ sind = salbruto * 0.04
 descontos = irpf + inss + sind
 saliquido = salbruto - descontos
 # Apresentação do resultados
-print("Salário bruto: R$",salbruto)
-print("Imposto de renda: R$",irpf)
-print("INSS: R$", inss)
-print("Sindicato: R$",sind)
-print(nome,"seu salário líquido é: R$",saliquido)
+print(f"Salário bruto: R$ {salbruto:.2f}")
+print(f"Imposto de renda: R$ {irpf:.2f}")
+print(f"INSS: R$ {inss:.2f}")
+print(f"Sindicato: R$ {sind:.2f}")
+print()
+print(nome)
+print(f"Seu salário líquido é: R$ {saliquido:.2f}")
